@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="ecommerce2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMMERCE WEBSITE</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="top-notification">
+            <p>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></p>
+            <div class="cancel-icon" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                </svg>
+            </div>
+        </div>
+
+        <div class="top-navigation-box">
+            <div class="top-navigation">
+
+                <button class="menu-toggle" aria-label="Open menu"
+                    onclick="document.querySelector('.navigation').classList.toggle('open')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+                <h1 class="logo">SHOP.CO</h1>
+
+                <div class="navigation">
+                    <a href="#" class="shop-link">Shop
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 6 8 10 12 6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#">On Sale</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Brands</a>
+                </div>
+
+                <div class="search-box">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" placeholder="Search for products...">
+                </div>
+
+                <div class="nav-icons">
+                    <a href="#" aria-label="Cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L20 8H6"></path>
+                            <circle cx="9" cy="20" r="1.2" fill="currentColor" stroke="none"></circle>
+                            <circle cx="16" cy="20" r="1.2" fill="currentColor" stroke="none"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Account">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <circle cx="12" cy="10" r="3"></circle>
+                            <path d="M6.5 18.5a6 6 0 0 1 11 0"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-design">
+            <div class="left">
+                <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                <div class="contain">
+                    <p class="text">Browse through our diverse range of meticulously crafted garments, designed to bring
+                        out your
+                        individuality and cater to your sense of style.</p>
+                    <div>
+                        <a href="#" class="shop-now-btn">Shop Now</a>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>200+</h3>
+                            <p>International Brands</p>
+                        </div>
+                        <div class="seprator"></div>
+                        <div class="stat">
+                            <h3>2,000+</h3>
+                            <p>High-Quality Products</p>
+                        </div>
+                        <div class="seprator"></div>
+                        <div class="stat">
+                            <h3>30,000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./design.png" alt="">
+            </div>
+        </div>
+
+        <div class="brands-wrapper">
+            <div class="brands-track">
+                <div class="brand"><img src="./image/versace.png" alt="Versace"></div>
+                <div class="brand"><img src="./image/zara.png" alt="Zara"></div>
+                <div class="brand"><img src="./image/gucci.png" alt="Gucci"></div>
+                <div class="brand"><img src="./image/prada.png" alt="Prada"></div>
+                <div class="brand"><img src="./image/calvin.png" alt="Calvin Klein"></div>
+            </div>
+            <div class="brands-track duplicate-track" aria-hidden="true">
+                <div class="brand"><img src="./image/versace.png" alt="Versace"></div>
+                <div class="brand"><img src="./image/zara.png" alt="Zara"></div>
+                <div class="brand"><img src="./image/gucci.png" alt="Gucci"></div>
+                <div class="brand"><img src="./image/prada.png" alt="Prada"></div>
+                <div class="brand"><img src="./image/calvin.png" alt="Calvin Klein"></div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="new-arrival-box ">
+                <h1>NEW ARRIVALS</h1>
+            </div>
+
+            <div class="outfits1-box">
+                <div class="outfits1">
+                    <img class="outfits1-img" src="./image/shirt1.png" alt="">
+                    <div class="outfit-details">
+                        <h4>T-shirt with Tape Details</h4>
+                        <img class="img1" src="./image/stars1.png" alt="">
+                        <h4 class="cost-price">$120</h4>
+                    </div>
+                </div>
+                <div class="outfits1">
+                    <img class="outfits1-img" src="./image/trouser1.png" alt="">
+                    <div class="outfit-details">
+                        <h4>Skinny Fit Jeans</h4>
+                        <img class="img2" src="./image/stars2.png" alt="">
+                        <div class="cost">
+                            <h4 class="cost-price">$240</h4>
+                            <h4 class="cost-slash">$260</h4>
+                            <div>-20%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outfits1">
+                    <img class="outfits1-img" src="./image/shirt2.png" alt="">
+                    <div class="outfit-details">
+                        <h4>Checkered Shirt</h4>
+                        <img class="img1" src="./image/stars1.png" alt="">
+                        <h4 class="cost-price">$180</h4>
+                    </div>
+                </div>
+                <div class="outfits1">
+                    <img class="outfits1-img" src="./image/shirt3.png" alt="">
+                    <div class="outfit-details">
+                        <h4>Sleeve Striped T-shirt</h4>
+                        <img class="img1" src="./image/stars1.png" alt="">
+                        <div class="cost">
+                            <h4 class="cost-price">$240</h4>
+                            <h4 class="cost-slash">$260</h4>
+                            <div>-20%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div outfits1-details-box> -->
+            <!-- </div> -->
+            <div class="view-all-box">
+                <a href="#">View All</a>
+            </div>
+
+            <!-- SEPERATOR -->
+            <div class="product-seperator1"></div>
+
+            <!-- SECTION2  -->
+            <div class="new-arrival-box ">
+                <h1>TOP SELLING</h1>
+            </div>
+
+            <div class="outfits1-box">
+                <div class="outfits1">
+                    <img class="outfits1-img" src="./image/shirt4.png" alt="">
+                    <div class="outfit-details">
+                        <h4>Vertical Striped Shirt</h4>
+                        <img class="img1" src="./image/stars3.png" alt="">
+                        <div class="cost">
+                            <h4 class="cost-price">$212</h4>
+                            <h4 class="cost-slash">$232</h4>
+                            <div>-20%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="outfits1">
+                    <img class="outfits1-img" src="./image/shirt5.png" alt="">
+                    <div class="outfit-details">
+                        <h4>Courage Graphic T-shirt</h4>
+                        <img class="img2" src="./image/stars4.png" alt="">
+                        <h4 class="cost-price">$145</h4>
+                    </div>
+                </div>
+                <div class="outfits1">
+                    <img class="outfits1-img" src="./image/trouser2.png" alt="">
+                    <div class="outfit-details">
+                        <h4>Loose Fit Bermuda Shorts</h4>
+                        <img class="img1" src="./image/stars5.png" alt="">
+                        <h4 class="cost-price">$80</h4>
+                    </div>
+                </div>
+                <div class="outfits1">
+                    <img class="outfits1-img" src="./image/trouser3.png" alt="">
+                    <div class="outfit-details">
+                        <h4>Faded Skinny Jeans</h4>
+                        <img class="img1" src="./image/stars1.png" alt="">
+                        <h4 class="cost-price">$210</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- <div outfits1-details-box> -->
+            <!-- </div> -->
+            <div class="view-all-box">
+                <a href="#">View All</a>
+            </div>
+            <!-- SEPERATOR -->
+            <div class="product-seperator2"></div>
+
+
+
+            <div class="style-section">
+                <h1 class="style-heading">BROWSE BY DRESS STYLE</h1>
+
+                <div class="v2">
+                    <div class="a">
+                        <div class="style-text">
+                            <h3>Casual</h3>
+                        </div>
+                        <div class="style"></div>
+                    </div>
+                    <div class="b">
+                        <div class="style-text">
+                            <h3>Formal</h3>
+                        </div>
+                        <div class="style"></div>
+                    </div>
+                    <div class="c">
+                        <div class="style-text">
+                            <h3>Party</h3>
+                        </div>
+                        <div class="style"></div>
+
+                    </div>
+                    <div class="d">
+                        <div class="style-text">
+                            <h3>Gymn</h3>
+                        </div>
+                        <div class="style"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="testimonials-section">
+            <div class="testimonials-header">
+                <h1>OUR HAPPY CUSTOMERS</h1>
+                <div class="testimonials-arrows">
+                    <button id="prevBtn" aria-label="Previous">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+                    <button id="nextBtn" aria-label="Next">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="testimonials-track" id="testimonialsTrack">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="reviewer-name">Sarah M. <span class="verified">✓</span></p>
+                    <p class="review-text">"I'm blown away by the quality and style of the clothes I received from
+                        Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
+                        expectations."</p>
+                </div>
+
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">Sarah M. <span class="verified">✓</span></p>
+                        <p class="review-text">"I'm blown away by the quality and style of the clothes I received from
+                            Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
+                            expectations."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">Sarah M. <span class="verified">✓</span></p>
+                        <p class="review-text">"I'm blown away by the quality and style of the clothes I received from
+                            Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
+                            expectations."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">Alex K. <span class="verified">✓</span></p>
+                        <p class="review-text">"Finding clothes that align with my personal style used to be a challenge
+                            until I discovered Shop.co. The range of options they offer is truly remarkable, catering to
+                            a
+                            variety of tastes and occasions."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">Alex K. <span class="verified">✓</span></p>
+                        <p class="review-text">"Finding clothes that align with my personal style used to be a challenge
+                            until I discovered Shop.co. The range of options they offer is truly remarkable, catering to
+                            a
+                            variety of tastes and occasions."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">Alex K. <span class="verified">✓</span></p>
+                        <p class="review-text">"Finding clothes that align with my personal style used to be a challenge
+                            until I discovered Shop.co. The range of options they offer is truly remarkable, catering to
+                            a
+                            variety of tastes and occasions."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">James L. <span class="verified">✓</span></p>
+                        <p class="review-text">"As someone who's always on the lookout for unique fashion pieces, I'm
+                            thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but
+                            also on
+                            point with the latest trends."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">Jams L. <span class="verified">✓</span></p>
+                        <p class="review-text">"As someone who's always on the lookout for unique fashion pieces, I'm
+                            thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but
+                            also on
+                            point with the latest trends."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">James L. <span class="verified">✓</span></p>
+                        <p class="review-text">"As someone who's always on the lookout for unique fashion pieces, I'm
+                            thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but
+                            also on
+                            point with the latest trends."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">James L. <span class="verified">✓</span></p>
+                        <p class="review-text">"As someone who's always on the lookout for unique fashion pieces, I'm
+                            thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but
+                            also on
+                            point with the latest trends."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">James L. <span class="verified">✓</span></p>
+                        <p class="review-text">"As someone who's always on the lookout for unique fashion pieces, I'm
+                            thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but
+                            also on
+                            point with the latest trends."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="reviewer-name">James L. <span class="verified">✓</span></p>
+                        <p class="review-text">"As someone who's always on the lookout for unique fashion pieces, I'm
+                            thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but
+                            also on
+                            point with the latest trends."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter-banner">
+            <h1>STAY UP TO DATE ABOUT<br>OUR LATEST OFFERS</h1>
+            <div class="newsletter-form">
+                <div class="email-input-box">
+                    <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <path d="m2 6 10 7 10-7"></path>
+                    </svg>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <button type="button">Subscribe to Newsletter</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-columns">
+                <div class="footer-brand">
+                    <h1 class="footer-logo">SHOP.CO</h1>
+                    <p class="footer-about">We have clothes that suit your style and which you're proud to wear.
+                        From
+                        women to men.</p>
+                    <div class="footer-socials">
+                        <img src="./image/socials/twitter.png" alt="">
+                        <img src="./image/socials/facebook.png" alt="">
+                        <img src="./image/socials/instagram.png" alt="">
+                        <img src="./image/socials/github.png" alt="">
+
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>COMPANY</h4>
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Works</a>
+                    <a href="#">Career</a>
+                </div>
+                <div class="footer-links">
+                    <h4>HELP</h4>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Delivery Details</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-links">
+                    <h4>FAQ</h4>
+                    <a href="#">Account</a>
+                    <a href="#">Manage Deliveries</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Payments</a>
+                </div>
+                <div class="footer-links">
+                    <h4>RESOURCES</h4>
+                    <a href="#">Free eBooks</a>
+                    <a href="#">Development Tutorial</a>
+                    <a href="#">How to - Blog</a>
+                    <a href="#">Youtube Playlist</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Shop.co © 2000-2026, All Rights Reserved</p>
+                <div class="payment-icons">
+                    <img src="./image/payoptions/visa.png" alt="">
+                    <img src="./image/payoptions/master.png" alt="">
+                    <img src="./image/payoptions/paypal.png" alt="">
+                    <img src="./image/payoptions/applepay.png" alt="">
+                    <img src="./image/payoptions/googlepay.png" alt="">
+                </div>
+            </div>
+        </footer>
+
+    </section>
+    <script>
+        const track = document.getElementById('testimonialsTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        let currentIndex = 0;
+        let cardWidth = 0;
+        let visibleCards = 0;
+        let maxIndex = 0;
+
+        function calculateDimensions() {
+            const card = track.querySelector('.testimonial-card');
+            if (!card) return;
+
+            const gap = 24; // gap between cards
+            const cardWidthWithGap = card.offsetWidth + gap;
+
+            // Calculate how many cards are visible based on container width
+            const containerWidth = track.parentElement.offsetWidth;
+            visibleCards = Math.floor(containerWidth / cardWidthWithGap);
+            cardWidth = cardWidthWithGap;
+
+            const totalCards = track.querySelectorAll('.testimonial-card').length;
+            maxIndex = Math.max(0, totalCards - visibleCards);
+
+            // Reset position if current index is now invalid
+            if (currentIndex > maxIndex) {
+                currentIndex = maxIndex;
+            }
+        }
+
+        function updateTrack() {
+            const scrollPosition = currentIndex * cardWidth;
+            track.style.transform = `translateX(-${scrollPosition}px)`;
+        }
+
+        function slideNext() {
+            const maxPossibleIndex = maxIndex;
+            if (currentIndex < maxPossibleIndex) {
+                currentIndex++;
+                updateTrack();
+            }
+        }
+
+        function slidePrev() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateTrack();
+            }
+        }
+
+        // Event Listeners
+        prevBtn.addEventListener('click', slidePrev);
+        nextBtn.addEventListener('click', slideNext);
+
+        // Handle window resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                const oldIndex = currentIndex;
+                calculateDimensions();
+                // Keep the same relative position if possible
+                if (currentIndex > maxIndex) {
+                    currentIndex = maxIndex;
+                } else {
+                    currentIndex = Math.min(oldIndex, maxIndex);
+                }
+                updateTrack();
+            }, 250);
+        });
+
+        // Initialize
+        window.addEventListener('load', () => {
+            calculateDimensions();
+            updateTrack();
+        });
+
+        // Also recalculate when fonts/images load
+        if (document.images) {
+            const images = document.images;
+            let loaded = 0;
+            for (let i = 0; i < images.length; i++) {
+                if (images[i].complete) {
+                    loaded++;
+                } else {
+                    images[i].addEventListener('load', () => {
+                        loaded++;
+                        if (loaded === images.length) {
+                            calculateDimensions();
+                            updateTrack();
+                        }
+                    });
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

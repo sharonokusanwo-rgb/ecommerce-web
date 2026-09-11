@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Integral CF";
+  src: url("fonts/integralCF-bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Montserrat" !important;
+}
+.top-notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  background-color: black;
+  color: white;
+  position: relative;
+  font-size: 14px;
+}
+.top-notification p a {
+  color: white;
+  text-decoration: underline;
+}
+.cancel-icon {
+  position: absolute;
+  top: 9px;
+  right: 100px;
+  bottom: 9px;
+  color: white;
+  cursor: pointer;
+}
+.topnav-box {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  height: 48px;
+  margin: 24px 100px;
+}
+.brand-name p {
+  color: #000000;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.nav-options {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.nav-options a {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: black;
+}
+.shop {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.shop svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.searchbar {
+  flex: 1;
+}
+.searchbar input {
+  border-radius: 62px;
+  height: 48px;
+  width: 100%;
+  min-width: 577px;
+  padding: 0 20px;
+  color: rgb(116, 108, 108);
+  background-color: rgb(237, 235, 235);
+  border: none;
+  outline: none;
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 20px;
+}
+
+.nav-icons a {
+  display: flex;
+  color: #000000;
+}
+.nav-icons svg {
+  width: 24px;
+  height: 24px;
+}
+/* SEARCH BAR */
+
+.searchbar {
+  position: relative;
+  flex: 1;
+}
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  right: 16px;
+  bottom: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  color: rgb(116, 108, 108);
+  pointer-events: none;
+}
+.searchbar input {
+  border-radius: 62px;
+  height: 48px;
+  width: 100%;
+  max-width: 577px;
+  padding: 0 20px 0 48px;
+  color: rgb(116, 108, 108);
+  background-color: rgb(237, 235, 235);
+  border: none;
+  outline: none;
+}
+/* 3RD SECTION MAIN  */
+.main-design {
+  width: 100vw;
+  top: 134px;
+  /* background-color: cadetblue; */
+  background-color: #f2f0f1;
+
+  display: flex;
+
+  /* flex-direction: column; */
+}
+.main-design .left {
+  width: 50vw;
+  padding: 100px 89px;
+  /* display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center; */
+}
+.main-design .right {
+  background-color: #f2f0f1;
+  width: 50vw;
+  /* background-image: url("design.png"); */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+.left h1 {
+  font-weight: 900;
+  font-size: 64px;
+  max-width: 577px;
+  line-height: 64px;
+  letter-spacing: 0%;
+}
+
+.contain .text {
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 545px;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.shop-now-btn {
+  margin-top: 30px;
+  padding: 16px 54px;
+  background-color: black;
+  border-radius: 62px;
+  text-decoration: none;
+  color: white;
+}
+
+.stats {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+.seprator {
+  border-right: solid rgba(0, 0, 0, 0.1);
+  padding-left: 32px;
+}
+.stat h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+/* BRANDS */
+.brands-wrapper {
+  background-color: #000000;
+  overflow: hidden;
+  width: 100%;
+  /* ADDED: Flexbox is required here so the two tracks sit side-by-side */
+  display: flex; 
+}
+
+/* Optional: Pauses the animation when a user hovers over the banner */
+.brands-wrapper:hover .brands-track {
+  animation-play-state: paused;
+}
+
+.brands-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 200px;
+  height: 122px;
+  flex-shrink: 0;
+  padding-right: 200px; /* Perfectly matches the gap for a seamless loop */
+  animation: scroll 15s linear infinite;
+}
+
+.brand img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  /* Optional: Adds a nice transition if you want to add hover effects to logos later */
+  transition: transform 0.3  s ease; 
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
